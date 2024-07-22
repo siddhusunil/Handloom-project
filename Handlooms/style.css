@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+}
+
+.module{
+    text-decoration: underline;
+    color:black;
+}
+.heading{
+    font-family: 'Dancing Script', cursive;
+}
+.container .row img{
+    border-radius: 10%;
+}
+.title span{
+    font-size: smaller;
+}
+.carousel{
+    width: 40vw;
+}
+.layer{
+    height:10vh;
+    /* background: url('./images/page-title-layer.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom:35px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container-fluid .navbar-brand img{
+    min-width: 200px;
+    max-width: 200px;
+    margin-top: -10%;
+}
+.row {
+    margin-right: 0;
+}
+.navigation{
+    margin-left: 71px;
+}
+@media(max-width:570px){
+    .carousel{
+        width:100vw;
+    }
+    .row{
+        margin: 4px 4px;
+    }
+    .row .img-fluid{
+        margin: 3%;
+    }
+    .layer{
+        height: 10vh;
+    }
+    .navigation{
+        margin-left: 20px;
+    }
+}
+
+/*Index styles*/
+.header:hover{
+    color: aliceblue;
+}
+.nav{
+    background-color: #ff01ff;
+}
+.navbar-brand{
+    color:#ffffff;
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+    border-radius: 15px;
+    background-position: 8%;
+}
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+.navbar-toggler::before{
+    background-color: white;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    border: 1px solid black;
+    background-color: skyblue;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.navbar-nav{
+    font-size: 18px;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background: url("img/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: blur;
+}
+.hero{
+    height:120vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: 'Kaushan Script', cursive;
+}
+.title{
+    position: relative;
+    top: 12%;
+    text-align: center;
+    margin-top: 32%;
+}
+.layer{
+    height: 3vh;
+    /* background: url('./gallery/page-title-layer.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 19%;
+}
+.serv-head{
+    font-family: 'Kaushan Script', cursive;
+}
+.left{
+    height:400px;
+    /* background: url('./gallery/organic.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.layer2{
+    height:20vh;
+    /* background: url('./gallery/page-title-layer.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    top: 68px;
+}
+.footer{
+    height:auto;
+    top: 5%;
+    background-color: black;
+    padding:50px 0px 30px 0px;
+}
+.footer .container .row h2{
+    color: white;
+    margin-top: -5%;
+    text-align: left;
+    font-size: 40px;
+}
+.footer h3{
+    font-size: 30px;
+    margin-top: -8%;
+}
+.foot{
+    background-color:black;
+}
+.foot h3{
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin-right: 3%;
+
+}
+.footer a:hover{
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 10%;
+
+}
+
+@media(max-width:576px){
+    
+    .row>.col-sm-12{
+        margin-bottom: 15px;
+    }
+    .row>.col-sm-6{
+        width:50%;
+    }
+    .bt{
+        margin-bottom: 20px;
+    }
+    .hero{
+        color: white;
+        text-align: center;
+    }
+    .title{
+        top: 92%;
+    }
+    .layer2{
+        height: 10vh;
+        top: 30px;
+    }
+    .layer{
+        height: 10vh;
+        bottom: 95px;
+    }
+
+}
+
+/*For FAQ's*/
+
+.brand{
+    color:black;
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+    border-radius: 15px;
+    background-position: 8%;
+
+}
+.brand a{
+    text-decoration: none;
+    color:orange;
+}
+.brand a img{
+    max-width: 200px;
+    min-width: 200px;
+}
+  .faq-bg{
+    /* background: url('./gallery/faq\'s.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+
+}  
+.text{
+    width: 50%;
+
+}
+.bg-text{
+    background:rgba(255,255,255,.6);
+    position: absolute;
+    color: red;
+    border: #ffffff;
+    font-style: italic;
+    font-size: 30px;
+    top: 60px;
+    left: 3%;
+}
+details[open].FAQs{
+    background: grey;
+    transition: all 0.3s ease-in-out;
+    
+}
+@media(max-width:570px){
+    .text{
+        width: 100%;
+        
+    }
+    .bg-text{
+        position:relative;
+        top: -10px;
+        left: 0;
+    }
+    .hero{
+        margin:20px;
+        padding-top: 10px;
+    }
+    .btn.mx-3{
+        display: none;
+    }
+}
+/*About*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
+.navigation a:hover{
+    color: skyblue;
+}
+.hero{
+    height: 40vh;
+    /* background: url("./images/m.jpg"); */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text1{
+    font-family: 'Qwigley', cursive;
+    margin-bottom: 0;
+}
+.text2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text3{
+    width: 50%;
+}
+.pic{
+   width: 40%;
+}
+.layer{
+    height:3vh;
+    /* background: url('./page-title-layer.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top:60%;
+}
+@media(max-width:570px){
+    .d-flex>.organic,.faq{
+        display: none;
+
+    }
+    a.fs-4{
+        padding-right:0%;
+    }
+}
+/* About */
+.profile{
+    margin-top: -120%;
+}
+.card{
+    top: -100%;
+	width: 200%;
+	max-width: 400px;
+	color: black;
+	align-items: center;
+	padding: 30px 25px;
+	border: 1px solid rgba(255,255,255,0.3);
+	background: skyblue;
+	border-radius: 18px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+	backdrop-filter: blur(3px);/*This is the !Important for Blur*/
+}
+
+.profile .card img{
+	width: 100px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.card h2{
+	font-size: 20px;
+	font-weight: 500px;
+	margin-top: 30px;
+	margin-left: 30px;
+    color: black;		
+}
+.card p{
+	font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    justify-content: center;
+	margin: 10px 30px;
+	max-width: 300px;
+    position: relative;
+	margin-left: 20px;
+    color: black;
+}
+.card .links svg{
+	width: 65px;
+	border-radius: 50%;
+	margin: 20px 0 10px;
+	transition: background 0.5s;
+	margin-left: 10px;
+}
+.card .links svg:hover{
+	background: transparent;
+}
+.btn1{
+	text-decoration: none;
+	display: inline-block;
+	font-size:18px;
+	font-weight: 500px;
+	background: #ff01ff;
+	color: white;
+	padding: 20px 40px;
+	border-radius: 30px;
+	margin: 20px 0 20px;
+	margin-left: 10px;
+}
